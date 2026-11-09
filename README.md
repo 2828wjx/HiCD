@@ -34,8 +34,8 @@ Each run creates a timestamped directory under `checkpoints/`, containing
 metrics, and `summary.json`. Select the checkpoint by validation Macro-F1.
 
 ```bash
-python -m method.test_primevul --checkpoint RUN_DIR --data_dir data/processed/primevul --split test
-python -m method.test_megavul --checkpoint RUN_DIR --data_dir data/processed/megavul --split test
+python -m method.test --checkpoint RUN_DIR --data_dir data/processed/primevul --split test
+python -m method.test --checkpoint RUN_DIR --data_dir data/processed/megavul --split test
 ```
 
 ## Citation and rights
