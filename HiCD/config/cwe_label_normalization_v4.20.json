@@ -1,0 +1,29 @@
+{
+  "policy_version": "cwe-4.20-deprecated",
+  "catalog_version": "4.20",
+  "catalog_release_date": "2026-04-30",
+  "catalog_source": "data/raw/cwe/cwec_v4.20.xml",
+  "catalog_sha256": "1f5a78bd62e00f86436b4fe32d5034a57e8f0da88e4063b2072b664ae510912e",
+  "view_1000_source": "data/raw/cwe/1000.xml",
+  "view_1000_sha256": "fcb19868b876c97e2c37ea51f22be333563dfdb1620159c57dccbadbc6b50618",
+  "scope": "Normalize entries whose CWE 4.20 status is Deprecated. Active categories are retained and remain ineligible for View-1000 hierarchy supervision.",
+  "strict_deprecated_coverage": true,
+  "rules": {
+    "CWE-17": {
+      "action": "drop",
+      "reason": "Deprecated organizational category with prohibited vulnerability mapping and no unique replacement.",
+      "official_reference": "https://cwe.mitre.org/data/definitions/17.html"
+    },
+    "CWE-18": {
+      "action": "drop",
+      "reason": "Deprecated organizational category with prohibited vulnerability mapping and no unique replacement.",
+      "official_reference": "https://cwe.mitre.org/data/definitions/18.html"
+    },
+    "CWE-1187": {
+      "action": "remap",
+      "target": "CWE-908",
+      "reason": "Deprecated duplicate of CWE-908; the official entry states that all content was transferred to CWE-908.",
+      "official_reference": "https://cwe.mitre.org/data/definitions/1187.html"
+    }
+  }
+}

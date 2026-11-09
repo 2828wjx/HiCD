@@ -1,0 +1,42 @@
+{
+  "schema_version": "hicd-paper-v1",
+  "dataset": "megavul",
+  "data_dir": "data/processed/megavul",
+  "encoder": "microsoft/codebert-base",
+  "output_root": "checkpoints/megavul/codebert",
+  "seeds": [
+    42
+  ],
+  "common_args": {
+    "input_mode": "code_desc",
+    "encoder_input_format": "standard",
+    "pooling_mode": "auto",
+    "max_length": 512,
+    "description_max_length": 64,
+    "code_max_length": 444,
+    "batch_size": 32,
+    "eval_batch_size": 16,
+    "gradient_accumulation_steps": 1,
+    "epochs": 50,
+    "lr": 1e-05,
+    "head_lr": 1e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "max_grad_norm": 1.0,
+    "temperature": 0.05,
+    "lambda_same_level": 1.0,
+    "lambda_pos_hard": 0.2,
+    "lambda_hard_medium": 0.05,
+    "lambda_geometry_alignment": 0.05,
+    "geometry_alignment_mode": "semantic",
+    "geometry_alignment_seed": 2026,
+    "pos_hard_margin": 0.15,
+    "hard_medium_margin": 0.05,
+    "ordering_start_level": 1,
+    "aux_warmup_epochs": 3,
+    "alignment_start_epoch": 4,
+    "alignment_warmup_epochs": 3,
+    "remain_hierarchy_loss_weight": 0.5,
+    "use_final_class_weights": false
+  }
+}
