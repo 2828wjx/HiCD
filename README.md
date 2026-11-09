@@ -44,7 +44,6 @@ python -m method.test --checkpoint RUN_DIR --data_dir data/processed/megavul --s
 @unpublished{wang_hicd,
   title = {HiCD: Software Vulnerability Type Classification via Hierarchical
            Contrastive Learning with Class Relation Distillation},
-  author = {Wang, Jiaxi and Zhou, Yanrong and Chen, Zhikai and Wu, Longfei and Guan, Zhitao},
   note = {Research manuscript}
 }
 ```
